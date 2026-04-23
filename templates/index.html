@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Funny → Sweet Journey 💖</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8c8cc;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* background image separate layer */
+        body::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            background: url("/static/images/bg.png") no-repeat center;
+            background-size: contain;
+
+            opacity: 0.9;
+            z-index: -1;
+        }
+
+        /* CARD */
+        .card {
+            width: 320px;
+            text-align: center;
+
+            background: rgba(255,255,255,0.9);
+            padding: 25px;
+            border-radius: 25px;
+
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+            animation: fade 0.5s ease;
+        }
+
+        @keyframes fade {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .card img {
+            width: 120px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            margin: 8px 0;
+            line-height: 1.5;
+        }
+
+        .card ul {
+            margin: 10px 0;
+        }
+
+        h2 {
+            margin: 10px 0;
+        }
+
+        p, li {
+            color: #555;
+        }
+
+        ul {
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+
+            border: none;
+            border-radius: 20px;
+
+            background: linear-gradient(135deg, #ff9ecf, #a18cd1);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <img id="img">
+
+    <h2 id="title"></h2>
+
+    <div id="content"></div>
+
+    <button id="nextBtn" onclick="nextStep()">Click me 💕</button>
+
+</div>
+
+<script>
+let step = 0;
+
+const steps = [
+    {
+        img: "bgx.png",
+        title: "⚠️ Warning",
+        content: `
+            <ul>
+                <li>This site is 100% useless… but fun 😏</li>  
+                <li>You might smile like an idiot (no offense 😆)</li>
+            </ul>
+            <p>Still wanna continue? Brave choice 😎</p>
+        `
+    },
+    {
+        img: "bg2.png",
+        title: "😂 Roast",
+        content: `
+            <p>You clicked again?? 👀</p>
+            <p>You really have nothing better to do huh 😭</p>
+            <p>Relax… I’m just kidding… you’re actually cute 😆💖</p>
+        `
+    },
+    {
+        img: "bg1.png",
+        title: "🎯 Challenge",
+        content: `
+            <p>Still clicking? Interesting 😏</p>
+            <p>Try NOT clicking next… I dare you 😏</p>
+            <ul>
+                <li>5 seconds…</li>
+                <li>3 seconds…</li>
+                <li>Okay you failed 😂</li>
+            </ul>
+            <p>I knew you would click 😆</p>
+        `
+    },
+    {
+        img: "bg4.png",
+        title: "🤔 Plot Twist",
+        content: `
+            <p>Wait… something is wrong 🤨</p>
+            <ul>
+                <li>You’re still here</li>
+                <li>You kept clicking</li>
+                <li>You didn’t close the page</li>
+            </ul>
+            <p>Conclusion: You've no work 😎</p>
+        `
+    },
+    {
+        img: "roast.png",
+        title: "💖 Compliments",
+        content: `
+            <p>Okay jokes aside… listen 👇</p>
+            <ul>
+                <li>You’re actually a nice person 💕</li>
+                <li>You make people smile 😊</li>
+                <li>You’re kinda awesome 😘</li>
+            </ul>
+        `
+    },
+    {
+        img: "bg3.png",
+        title: "📝 Note",
+        content: `
+            <p>Hey you 💖</p>
+            <p>
+                Just in case no one told you today:
+            </p>
+            <ul>
+                <li>You're the best person in the world✨</li>
+                <li>I've ever met (offcourse after mama)😁</li>
+                <li>You’re doing fine 🌸</li>
+                <li>You don’t need to rush ⏳</li>
+                <li>You’ll figure things out ✨</li>
+            </ul>
+            <p>Now take a breath… and relax 😌</p>
+        `
+    },
+    {
+        img: "bg5.png",
+        title: "🎉 Final",
+        content: `
+            <p>You smiled, didn’t you? 😄</p>
+        `
+    },
+    {
+        img: "bg4.png",
+        title: "OOO I Know You Liked Like It",
+        content: `
+            <p>Congratulations 🎉</p>
+            <p>You just completed absolutely nothing 😆</p>
+            <p>But hey…</p>
+            <ul>
+                <li>You smiled 😄</li>
+                <li>You stayed till the end 👀</li>
+                <li>You enjoyed it (admit it 😏)</li>
+            </ul>
+            <p><strong>Love You Di 🌱😂</strong></p>
+        `
+    }
+];
+
+function loadStep() {
+    document.getElementById("img").src = "/static/images/" + steps[step].img;
+    document.getElementById("title").innerText = steps[step].title;
+    document.getElementById("content").innerHTML = steps[step].content;
+    const btn = document.getElementById("nextBtn");
+
+    // 🔥 If last page
+    if (step === steps.length - 1) {
+        btn.innerText = "Wanna Start Again 💕";
+    } else {
+        btn.innerText = "Click me 💕";
+    }
+}
+
+function nextStep() {
+    if (step === steps.length - 1) {
+        // restart
+        step = 0;
+    } else {
+        step++;
+    }
+    loadStep();
+}
+
+// first load
+loadStep();
+</script>
+
+</body>
+</html>
