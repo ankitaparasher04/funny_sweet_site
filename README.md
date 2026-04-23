@@ -7,8 +7,7 @@ Designed to make users smile through a simple but engaging journey.
 
 ## 🚀 Live Demo
 
-👉 https://your-app.onrender.com
-*(Replace with your real deployed link)*
+👉 https://kittu-1.onrender.com/
 
 ---
 
