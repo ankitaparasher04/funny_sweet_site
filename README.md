@@ -23,37 +23,6 @@ Designed to make users smile through a simple but engaging journey.
 
 ---
 
-## 🖼️ Preview
-
-### 🏠 First Page (Warning)
-
-![Step 1](./static/images/warning.png)
-
-### 😂 Funny Roast
-
-![Step 3](./static/images/challenge_files/challenge.png)
-
-### 🎯 Challenge
-
-![Step 5](./static/images/compliment_files/compliment.png)
-
-### 🤔 Plot Twist
-
-![Step 4](./static/images/twist_files/twist.png)
-
-### 💖 Compliments
-
-![Step 2](./static/images/roast1_files/roast1.png)
-
-### 📝 Sweet Note
-
-![Step 6](./static/images/note.png)
-
-### 🎉 Final Page
-
-![Step 7](./static/images/final.png)
-
----
 
 ## 🛠️ Tech Stack
 
