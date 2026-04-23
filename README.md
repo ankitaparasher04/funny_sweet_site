@@ -1,1 +1,122 @@
-# funny_sweet_site
+# 💖 Funny → Sweet Journey
+
+A cute and interactive web experience that starts with humor 😂 and ends with a heartwarming message 💕
+Designed to make users smile through a simple but engaging journey.
+
+---
+
+## 🚀 Live Demo
+
+👉 https://your-app.onrender.com
+*(Replace with your real deployed link)*
+
+---
+
+## 🎯 Features
+
+* 😂 Funny start (roasts & jokes)
+* 🎯 Interactive multi-step journey
+* 💖 Sweet and emotional ending
+* 🔄 Restart option at the end
+* 🎨 Cute pastel UI design
+* 📱 Works on all devices
+
+---
+
+## 🖼️ Preview
+
+### 🏠 First Page (Warning)
+
+![Step 1](./static/images/warning.png)
+
+### 😂 Funny Roast
+
+![Step 2](./static/images/roast.png)
+
+### 🎯 Challenge
+
+![Step 3](./static/images/challenge.png)
+
+### 🤔 Plot Twist
+
+![Step 4](./static/images/twist.png)
+
+### 💖 Compliments
+
+![Step 5](./static/images/compliment.png)
+
+### 📝 Sweet Note
+
+![Step 6](./static/images/note.png)
+
+### 🎉 Final Page
+
+![Step 7](./static/images/final.png)
+
+---
+
+## 🛠️ Tech Stack
+
+* 🐍 Python (Flask)
+* 🌐 HTML
+* 🎨 CSS
+* ⚡ JavaScript
+
+---
+
+## 📂 Project Structure
+
+your_project/
+│
+├── app.py
+├── requirements.txt
+├── Procfile
+│
+├── templates/
+│   └── index.html
+│
+├── static/
+│   ├── style.css
+│   ├── script.js
+│   └── images/
+│       ├── warning.png
+│       ├── roast.png
+│       ├── challenge.png
+│       ├── twist.png
+│       ├── compliment.png
+│       ├── note.png
+│       └── final.png
+
+---
+
+## ⚙️ How to Run Locally
+
+```bash
+pip install -r requirements.txt
+python app.py
+```
+
+Open:
+http://127.0.0.1:5000
+
+---
+
+## 🌍 Deployment
+
+Deployed using Render
+
+---
+
+## 💡 Future Improvements
+
+* 🎬 Add smooth animations
+* 🎉 Confetti effects on final page
+* 👤 User personalization (name input)
+* 🔊 Sound effects
+* 🔗 Shareable custom links
+
+---
+
+## 💖 Author
+
+Made with ❤️ by Ankita
