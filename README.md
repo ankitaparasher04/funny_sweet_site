@@ -31,19 +31,19 @@ Designed to make users smile through a simple but engaging journey.
 
 ### 😂 Funny Roast
 
-![Step 2](./static/images/roast.png)
+![Step 3](./static/images/challenge_files/challenge.png)
 
 ### 🎯 Challenge
 
-![Step 3](./static/images/challenge.png)
+![Step 5](./static/images/compliment_files/compliment.png)
 
 ### 🤔 Plot Twist
 
-![Step 4](./static/images/twist.png)
+![Step 4](./static/images/twist_files/twist.png)
 
 ### 💖 Compliments
 
-![Step 5](./static/images/compliment.png)
+![Step 2](./static/images/roast1_files/roast1.png)
 
 ### 📝 Sweet Note
 
